@@ -1,0 +1,26 @@
+Schriftart:
+DIN Pro
+
+Farben:
+schwarz
+rot
+violett
+
+Klassen:
+# SEGMENT
+segment
+segment-bild
+segment-text
+titel-segment
+uerberschrift-segment
+text-segment
+hervorgehoben (rot, fett)
+# MENÜ
+menue
+menue-offen
+menue-geschlossen
+menue-eintraege
+# IMPRESSUM
+impressum
+ueberschrift-impressum
+text-impressum
