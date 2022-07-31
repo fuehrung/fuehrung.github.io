@@ -46,9 +46,11 @@
         </div>
         
         <!-- SEGMENT "DER RECHTE WEG" -->
-        <div class="segment segment-bild" id="der-rechte-weg" style="background-image: url('bilder/SCR_der_rechte_weg.png')">
-            <div class="titel-segment">
-                DER RECHTE WEG
+        <div class="segment segment-bild" id="der-rechte-weg" style="background-image: url('bilder/SCR_der_rechte_weg.PNG')">
+            <div class="container-titel-segment">
+                <div class="titel-segment">
+                    DER RECHTE WEG
+                </div>
             </div>
         </div>
         <div class="segment segment-text">
@@ -70,9 +72,11 @@
         </div>
 
         <!-- SEGMENT "STUDENT IN WIEN" -->
-        <div class="segment segment-bild" id="student-in-wien" style="background-image: url('bilder/SCR_student_in_wien.png');">
-            <div class="titel-segment">
-                STUDENT IN WIEN
+        <div class="segment segment-bild" id="student-in-wien" style="background-image: url('bilder/SCR_student_in_wien.PNG');">
+            <div class="container-titel-segment">
+                <div class="titel-segment">
+                    STUDENT IN WIEN
+                </div>
             </div>
         </div>
         <div class="segment segment-text">
@@ -96,8 +100,10 @@
 
         <!-- SEGMENT "BESSER DRAUF" -->
         <div class="segment segment-bild" id="besser-drauf" style="background-image: url('bilder/SCR_besser_drauf.PNG');">
-            <div class="titel-segment">
-                BESSER DRAUF
+            <div class="container-titel-segment">
+                <div class="titel-segment">
+                    BESSER DRAUF
+                </div>
             </div>
         </div>
         <div class="segment segment-text">
@@ -152,10 +158,13 @@
         </div>
 
         <!-- SEGMENT "LEBEN AM HAUS" -->
-        <div class="segment segment-bild" id="leben-am-haus" style="background-image: url('bilder/SCR_leben_am_haus.png');">
-            <div class="titel-segment">
-                LEBEN AM HAUS
-            </div>
+        <div class="segment segment-bild" id="leben-am-haus" style="background-image: url('bilder/SCR_leben_am_haus.PNG');">
+            <div class="container-titel-segment">
+                <div class="titel-segment">
+                    LEBEN AM HAUS
+                </div>
+            </div>    
+            
         </div>
         <div class="segment segment-text">
             <div class="text-segment hervorgehoben">
@@ -173,9 +182,11 @@
         </div>
 
         <!-- SEGMENT "LAGE UND KONTAKT" -->
-        <div class="segment segment-bild" id="lage-und-kontakt" style="background-image: url('bilder/SCR_lage_und_kontakt.png');">
-            <div class="titel-segment">
-                LAGE & KONTAKT
+        <div class="segment segment-bild" id="lage-und-kontakt" style="background-image: url('bilder/SCR_lage_und_kontakt.PNG');">
+            <div class="container-titel-segment">
+                <div class="titel-segment">
+                    LAGE & KONTAKT
+                </div>
             </div>
         </div>
         <div class="segment segment-text">
@@ -242,7 +253,7 @@
             }
 
             // Dynamisches Erscheinen Segment Titel
-            for (let segmentTitel of document.querySelectorAll('.titel-segment')) {
+            for (let segmentTitel of document.querySelectorAll('.container-titel-segment')) {
                 let intObs = new IntersectionObserver(eintraege => {
                     for (let etr of eintraege) {
                         if (etr.isIntersecting) {
