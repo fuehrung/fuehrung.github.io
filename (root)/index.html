@@ -253,7 +253,7 @@
             }
 
             // Dynamisches Erscheinen Segment Titel
-            for (let segmentTitel of document.querySelectorAll('.container-titel-segment')) {
+            for (let segTitel of document.querySelectorAll('.container-titel-segment')) {
                 let intObs = new IntersectionObserver(eintraege => {
                     for (let etr of eintraege) {
                         if (etr.isIntersecting) {
@@ -261,7 +261,7 @@
                         } 
                     }
                 })
-                intObs.observe(segmentTitel);
+                intObs.observe(segTitel);
             }
         </script>
     </body>
